@@ -1,0 +1,51 @@
+#1
+#spam = 'ababaababbbbcccbabcc'
+#word = 'bab'
+#jumlah = 0
+
+#for i in range(len(spam) - len(word) + 1):
+    #if spam[i:i+len(word)] == word:
+        #jumlah += 1
+
+#print("Appeared", jumlah, "times")
+
+#2
+#spam = 'ooxx'
+
+# Inisialisasi penghitung
+#jumlah_o = 0
+#jumlah_x = 0
+
+# Hitung jumlah 'o' dan 'x' secara manual
+#for huruf in spam:
+   # if huruf == 'o':
+   #     jumlah_o += 1
+   # elif huruf == 'x':
+   #     jumlah_x += 1
+
+# Bandingkan hasilnya
+#if jumlah_o == jumlah_x:
+ #   print(True)
+#else:
+ #   print(False)
+
+#3
+# Input angka
+number = 153
+
+# Ubah angka menjadi string untuk menghitung jumlah digit
+digits = str(number)
+
+# Hitung jumlah digit
+jumlah_digit = len(digits)
+
+# Hitung jumlah dari setiap digit yang dipangkatkan dengan jumlah digit
+total = 0
+for digit in digits:
+    total = total + int(digit) ** jumlah_digit
+
+# Cek apakah total sama dengan angka asli
+if total == number:
+    print(f"{number} is narcissistic number")
+else:
+    print(f"{number} is not narcissistic number")
